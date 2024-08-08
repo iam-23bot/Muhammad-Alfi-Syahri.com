@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Alfi Syahri - Tukang Air</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .loading-screen p {
+            font-size: 2em;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: url('https://via.placeholder.com/150') no-repeat center center;
+            background-size: cover;
+            margin: 0 auto;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .section1 { background-image: url('https://via.placeholder.com/1920x1080'); }
+        .section2 { background-image: url('https://via.placeholder.com/1920x1080/ff0000/ffffff'); }
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <p>Loading...</p>
+    </div>
+    
+    <div class="container">
+        <div class="avatar"></div>
+        <h1>Muhammad Alfi Syahri</h1>
+        <p>Tukang Air</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/muhammad-alfi-syahri" target="_blank">LinkedIn</a>
+            <a href="https://github.com/iam-23bot" target="_blank">GitHub</a>
+        </div>
+    </div>
+    
+    <div class="parallax section1"></div>
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Saya adalah seorang Tukang Air yang berdedikasi untuk memberikan layanan terbaik kepada pelanggan. Dengan pengalaman yang luas dan keterampilan teknis yang mumpuni, saya siap membantu Anda dengan berbagai kebutuhan terkait air.</p>
+    </div>
+    <div class="parallax section2"></div>
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Jika Anda ingin menghubungi saya, silakan kunjungi profil LinkedIn atau GitHub saya melalui tautan di atas.</p>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById('loading-screen').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
